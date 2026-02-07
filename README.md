@@ -10,9 +10,7 @@ The MT6701 is a magnetic rotary position sensor that can output quadrature encod
 - ✅ Program AB resolution from 1 to 1024 PPR
 - ✅ Preserves Z pulse width settings
 - ✅ Read-only mode for safe configuration viewing
-- ✅ Live angle display
 - ✅ I2C bus scanner for troubleshooting
-- ✅ Comprehensive error checking and validation
 
 ## Hardware Requirements
 
@@ -28,9 +26,9 @@ MT6701 QFN-16          Arduino Nano
 ─────────────          ────────────
 Pin 13 (VDD)    ──────> 5V
 Pin 16 (GND)    ──────> GND
-Pin 14 (MODE)   ──────> Leave unconnected (floats HIGH for I2C mode)
-Pin 6  (A or SDA)  ──┬───> A4 (SDA)
-Pin 7  (B or SCL)  ──┬───> A5 (SCL)
+Pin 14 (MODE)   ──────> Leave unconnected
+Pin 6  (A or SDA)  ──────> A4 (SDA)
+Pin 7  (B or SCL)  ──────> A5 (SCL)
 Pin 8  (Z)      ──────> Leave unconnected
 ```
 
@@ -90,7 +88,6 @@ Before programming, check the current settings:
    === Current Configuration ===
      AB Resolution: 1 PPR
      Z Pulse Width: 1 LSB
-     Current Angle: 127.45°
    ```
 
 ### Step 3: Program New Resolution
@@ -98,18 +95,10 @@ Before programming, check the current settings:
 1. Set `DESIRED_AB_PPR` to your target value
 2. Set `ENABLE_PROGRAMMING = true`
 3. Upload the sketch
-4. Monitor the programming process in Serial Monitor:
+4. Monitor the programming process in Serial Monitor
    ```
    === Starting Programming Sequence ===
-   Step 1: Reading existing registers...
-   Step 2: Writing to registers...
-   Step 3: Unlocking EEPROM (key: 0xB3)...
-   Step 4: Programming command (0x05)...
-   Step 5: EEPROM write cycle (650ms)...
-   Step 6: Verification...
-   
-   ========================================
-     Programming Complete!
+   Programming complete.
    ========================================
    ```
 
