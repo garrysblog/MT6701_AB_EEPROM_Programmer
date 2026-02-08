@@ -232,7 +232,7 @@ uint8_t readRegister(uint8_t regAddr) {
   Wire.beginTransmission(MT6701_ADDR);
   Wire.write(regAddr);
   Wire.endTransmission(false);
-  Wire.requestFrom(MT6701_ADDR, (uint8_t)1);
+  Wire.requestFrom((uint8_t)MT6701_ADDR, (uint8_t)1);
   return Wire.available() ? Wire.read() : 0;
 }
 
