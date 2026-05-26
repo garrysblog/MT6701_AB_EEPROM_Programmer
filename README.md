@@ -2,6 +2,8 @@
 
 Program the AB quadrature resolution of the MT6701 magnetic rotary encoder via I2C using an Arduino Nano or Uno.
 
+Further information about this project is available at [Replacing a Rotary Encoder with a Magnetic Sensor and Potentiometer](https://garrysblog.com/2025/10/16/replacing-a-rotary-encoder-with-a-magnetic-sensor-and-potentiometer/).
+
 ## Overview
 
 The MT6701 is a magnetic rotary position sensor that can output quadrature encoder signals (ABZ). This Arduino sketch allows you to change the AB resolution (pulses per revolution) stored in the MT6701's EEPROM without needing proprietary programming tools.
