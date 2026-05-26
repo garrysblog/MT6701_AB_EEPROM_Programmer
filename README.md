@@ -12,6 +12,14 @@ The MT6701 is a magnetic rotary position sensor that can output quadrature encod
 - ✅ Read-only mode for safe configuration viewing
 - ✅ I2C bus scanner for troubleshooting
 
+An MT6701 module with pin headers for programming and encoder use.
+
+![Pin headers soldered to a MT6701 module](images/MT6701AfterSolder.jpg)
+
+An MT6701 module programmed and paired with a knob and parts from a potentiometer.
+
+![MT6701 configured with potentiometer parts](images/RotaryAssembly2.jpg)
+
 ## Hardware Requirements
 
 ### Components
